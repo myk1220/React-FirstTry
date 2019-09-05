@@ -45,9 +45,9 @@ export default class Comp extends React.Component{
     render(){
         return(
             <div>
-            <div>stats:{ this.state.num }</div>
-            <button onClick={ this.clickhander.bind(this) }>修改stats</button>
-            <div>{ this.props.title }</div>
+                <div>stats:{ this.state.num }</div>
+                <button onClick={ this.clickhander.bind(this) }>修改stats</button>
+                <div>{ this.props.title }</div>
             </div>
         )
     }

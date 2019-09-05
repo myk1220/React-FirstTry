@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav'
 import Comp from './component'
+import MyForm from './myForm'
 
 class App extends React.Component{
 
@@ -22,8 +23,9 @@ class App extends React.Component{
       <div>
         {/* <Nav title='音乐'/>
         <Nav title='地址'/> */}
-        <Comp title={ this.state.title }/>
-        <button onClick={this.clickHander }>修改props</button>
+        {/* <Comp title={ this.state.title }/>
+        <button onClick={this.clickHander }>修改props</button> */}
+        <MyForm />
       </div>  
   );}
 

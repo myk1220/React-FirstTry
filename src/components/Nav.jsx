@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types'
 
 export default class Nav extends React.Component{
 
@@ -47,4 +48,8 @@ export default class Nav extends React.Component{
             </div>
         )
     }
+}
+
+Nav.propTypes = {
+    title:propTypes.string.isRequired
 }

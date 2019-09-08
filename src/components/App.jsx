@@ -23,11 +23,11 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        {/* <Nav title='音乐'/>
-        <Nav title='地址'/> */}
+        <Nav title='text'/>
+        <Nav title='地址'/>
         {/* <Comp title={ this.state.title }/>
         <button onClick={this.clickHander }>修改props</button> */}
-        <Parent />
+        {/* <Parent /> */}
       </div>  
   );}
 

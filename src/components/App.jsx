@@ -3,6 +3,7 @@ import Nav from './Nav'
 import Comp from './component'
 import MyForm from './myForm'
 import FormDom from './formDom'
+import Parent from './parent'
 
 class App extends React.Component{
 
@@ -26,7 +27,7 @@ class App extends React.Component{
         <Nav title='地址'/> */}
         {/* <Comp title={ this.state.title }/>
         <button onClick={this.clickHander }>修改props</button> */}
-        <FormDom />
+        <Parent />
       </div>  
   );}
 

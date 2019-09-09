@@ -5,6 +5,7 @@ import MyForm from './myForm'
 import FormDom from './formDom'
 import Parent from './parent'
 import Connect from './connect'
+import api from '../api/index'
 
 class App extends React.Component{
 
@@ -13,6 +14,12 @@ class App extends React.Component{
     this.state= {
         title:'first'
     }
+  }
+
+  componentDidMount(){
+    api.indexMovement.getIndexMovement()
+    .then((res) => { return res.json(); })
+    .then((data) => {console.log(data)})
   }
 
   clickHander = () => {
@@ -29,7 +36,7 @@ class App extends React.Component{
         {/* <Comp title={ this.state.title }/>
         <button onClick={this.clickHander }>修改props</button> */}
         {/* <Parent /> */}
-        <Connect />
+        {/* <Connect /> */}
       </div>  
   );}
 

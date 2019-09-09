@@ -53,3 +53,6 @@ export default class Nav extends React.Component{
 Nav.propTypes = {
     title:propTypes.string.isRequired
 }
+Nav.defaultProps = {
+    title:'默认值'
+}

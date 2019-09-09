@@ -4,6 +4,7 @@ import Comp from './component'
 import MyForm from './myForm'
 import FormDom from './formDom'
 import Parent from './parent'
+import Connect from './connect'
 
 class App extends React.Component{
 
@@ -23,11 +24,12 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <Nav title='text'/>
-        <Nav title='地址'/>
+        {/* <Nav />
+        <Nav title='地址'/> */}
         {/* <Comp title={ this.state.title }/>
         <button onClick={this.clickHander }>修改props</button> */}
         {/* <Parent /> */}
+        <Connect />
       </div>  
   );}
 

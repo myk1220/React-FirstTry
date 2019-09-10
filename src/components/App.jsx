@@ -19,6 +19,9 @@ class App extends React.Component{
   componentDidMount(){
     api.indexMovement.getIndexMovement()
     .then((res) => { return res.json(); })
+    .then((data) => {console.log(data)});
+    api.indexOther.getOther()
+    .then((res) => { return res.json(); })
     .then((data) => {console.log(data)})
   }
 
